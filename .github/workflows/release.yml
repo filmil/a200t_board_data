@@ -1,0 +1,80 @@
+# SPDX-License-Identifier: Apache-2.0
+# A release every week, and only when something changed.
+#
+# The run builds the document and reads the data, takes the checksums of
+# both, and compares them with the checksums the last release carries. If
+# they are the same, the run stops and no release is cut. Otherwise it
+# tags the commit and uploads the document, the data and the checksums.
+name: release
+
+on:
+  schedule:
+    - cron: "17 5 * * 1"
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "doc/**"
+      - "tools/**"
+      - "MODULE.bazel"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Cache Bazel
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/bazel
+          key: bazel-${{ runner.os }}-${{ hashFiles('MODULE.bazel') }}
+          restore-keys: bazel-${{ runner.os }}-
+
+      - name: Build and check
+        run: |
+          bazelisk build //doc:a200t
+          bazelisk test //... --test_output=errors
+
+      - name: Gather what a release carries
+        id: gather
+        run: |
+          mkdir -p out
+          cp bazel-bin/doc/a200t.pdf out/a200t.pdf
+          cp data/pins.json out/pins.json
+          # The PDF holds a build date, so its bytes change on every run.
+          # What decides a release is the data and the document's source.
+          sha256sum data/pins.json doc/a200t.tex tools/pintex/main.go \
+              tools/pinextract/main.go > out/checksums.txt
+          echo "hash=$(sha256sum out/checksums.txt | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+
+      - name: What the last release carries
+        id: last
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release download --pattern checksums.txt --dir last 2>/dev/null; then
+            echo "hash=$(sha256sum last/checksums.txt | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+          else
+            echo "hash=none" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Cut the release, if anything changed
+        if: steps.gather.outputs.hash != steps.last.outputs.hash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="v$(date -u +%Y.%m.%d)-$(git rev-parse --short HEAD)"
+          gh release create "$tag" \
+              --title "The board's data, $(date -u +%Y-%m-%d)" \
+              --notes "$(printf '%s\n\n%s\n' \
+                  'The pin table and the document, built from the vendor documents by this repository.' \
+                  'A release is cut only when the data, the document or the tools change.')" \
+              out/a200t.pdf out/pins.json out/checksums.txt
+
+      - name: Say that nothing changed
+        if: steps.gather.outputs.hash == steps.last.outputs.hash
+        run: echo "The data and the document are what the last release carries; no release."
