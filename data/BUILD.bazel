@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: Apache-2.0
+# The pin table: every ball of the FPGA with what the vendor's documents
+# say about it. Written by //tools/pinextract and committed here,
+# because the documents it reads are the vendor's and are not in this
+# repository.
+load("@rules_go//go:def.bzl", "go_test")
+
+package(default_visibility = ["//visibility:public"])
+
+exports_files(["pins.json"])
+
+filegroup(
+    name = "pins",
+    srcs = ["pins.json"],
+)
+
+# The table is data rather than code, so these tests are what stands
+# between a wrong reading of a schematic and a design that does not work
+# on the board.
+go_test(
+    name = "pins_test",
+    srcs = ["pins_test.go"],
+    data = ["pins.json"],
+)

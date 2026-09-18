@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: Apache-2.0
+# rules_latex_host comes from the registry that holds it, and the
+# central registry holds the rest.
+common --registry=https://raw.githubusercontent.com/filmil/bazel-registry/main
+common --registry=https://bcr.bazel.build
+
+# Shared caches on the hdlfactory hosts, where the file exists; a no-op
+# elsewhere.
+try-import /data/cache/ci.bazelrc

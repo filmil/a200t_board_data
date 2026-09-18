@@ -1,0 +1,4152 @@
+{
+  "board": "Alinx AX7A200B: a carrier board with an AC7A200 core board on it",
+  "part": "xc7a200tfbg484-2",
+  "reader": "Every row states what the vendor's documents say. A row with a note states what this repository worked out, and why.",
+  "pins": [
+    {
+      "pin": "A1",
+      "signal": "DDR3_D2",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "A4",
+      "signal": "SFP1_TX_N",
+      "purpose": "a GTP transceiver: the PCIe slot or an SFP cage",
+      "peripheral": "sfp",
+      "board": "core",
+      "aliases": [
+        "MGT_TX0_N"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "A6",
+      "signal": "PCIE_TX1_N",
+      "purpose": "a GTP transceiver: the PCIe slot or an SFP cage",
+      "peripheral": "pcie",
+      "board": "core",
+      "aliases": [
+        "MGT_TX2_N"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "A8",
+      "signal": "SFP1_RX_N",
+      "purpose": "a GTP transceiver: the PCIe slot or an SFP cage",
+      "peripheral": "sfp",
+      "board": "core",
+      "aliases": [
+        "MGT_RX0_N"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "A10",
+      "signal": "PCIE_RX1_N",
+      "purpose": "a GTP transceiver: the PCIe slot or an SFP cage",
+      "peripheral": "pcie",
+      "board": "core",
+      "aliases": [
+        "MGT_RX2_N"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "B2",
+      "signal": "DDR3_D4",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "B4",
+      "signal": "SFP1_TX_P",
+      "purpose": "a GTP transceiver: the PCIe slot or an SFP cage",
+      "peripheral": "sfp",
+      "board": "core",
+      "aliases": [
+        "MGT_TX0_P"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "B6",
+      "signal": "PCIE_TX1_P",
+      "purpose": "a GTP transceiver: the PCIe slot or an SFP cage",
+      "peripheral": "pcie",
+      "board": "core",
+      "aliases": [
+        "MGT_TX2_P"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "B8",
+      "signal": "SFP1_RX_P",
+      "purpose": "a GTP transceiver: the PCIe slot or an SFP cage",
+      "peripheral": "sfp",
+      "board": "core",
+      "aliases": [
+        "MGT_RX0_P"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "B10",
+      "signal": "PCIE_RX1_P",
+      "purpose": "a GTP transceiver: the PCIe slot or an SFP cage",
+      "peripheral": "pcie",
+      "board": "core",
+      "aliases": [
+        "MGT_RX2_P"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "B14",
+      "signal": "VCCO_16",
+      "purpose": "a bank's supply",
+      "peripheral": "power",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "C5",
+      "signal": "SFP2_TX_N",
+      "purpose": "Diff    PIN32   MGT_RX0_N      A8      Diff",
+      "peripheral": "sfp",
+      "board": "core",
+      "aliases": [
+        "MGT_TX1_N"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "C7",
+      "signal": "PCIE_TX0_N",
+      "purpose": "Diff            MGT_RX2_N     A10      Diff",
+      "peripheral": "pcie",
+      "board": "core",
+      "aliases": [
+        "MGT_TX3_N"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "C9",
+      "signal": "PCIE_RX0_N",
+      "purpose": "Diff             MGT_TX0_N     A4      Diff",
+      "peripheral": "pcie",
+      "board": "core",
+      "aliases": [
+        "MGT_RX3_N"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "C11",
+      "signal": "SFP2_RX_N",
+      "purpose": "Diff    PIN38   MGT_CLK1_N     E10     Diff",
+      "peripheral": "sfp",
+      "board": "core",
+      "aliases": [
+        "MGT_RX1_N"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "D2",
+      "signal": "DDR3_DM0",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "D5",
+      "signal": "SFP2_TX_P",
+      "purpose": "Diff    PIN30   MGT_RX0_P      B8      Diff",
+      "peripheral": "sfp",
+      "board": "core",
+      "aliases": [
+        "MGT_TX1_P"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "D7",
+      "signal": "PCIE_TX0_P",
+      "purpose": "Diff             MGT_RX2_P     B10     Diff",
+      "peripheral": "pcie",
+      "board": "core",
+      "aliases": [
+        "MGT_TX3_P"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "D9",
+      "signal": "PCIE_RX0_P",
+      "purpose": "Diff             MGT_TX0_P     B4      Diff",
+      "peripheral": "pcie",
+      "board": "core",
+      "aliases": [
+        "MGT_RX3_P"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "D11",
+      "signal": "SFP2_RX_P",
+      "purpose": "Diff    PIN36   MGT_CLK1_P     F10     Diff",
+      "peripheral": "sfp",
+      "board": "core",
+      "aliases": [
+        "MGT_RX1_P"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "E6",
+      "signal": "MGT_CLK0_N",
+      "purpose": "a GTP transceiver: the PCIe slot or an SFP cage",
+      "peripheral": "transceiver",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "E7",
+      "signal": "CLK_N",
+      "purpose": "a clock",
+      "peripheral": "clock",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "E10",
+      "signal": "PCIE_CLK_N",
+      "purpose": "a transceiver supply",
+      "peripheral": "pcie",
+      "board": "core",
+      "aliases": [
+        "MGT_CLK1_N",
+        "MGTAVCC"
+      ],
+      "note": "the schematics call this ball MGTAVCC, of the power, and the manual calls it PCIE_CLK_N, of the pcie",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "F2",
+      "signal": "VCCO_35",
+      "purpose": "a bank's supply",
+      "peripheral": "power",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "F3",
+      "signal": "DDR3_D3",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "F6",
+      "signal": "MGT_CLK0_P",
+      "purpose": "a GTP transceiver: the PCIe slot or an SFP cage",
+      "peripheral": "transceiver",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "F10",
+      "signal": "PCIE_CLK_P",
+      "purpose": "a GTP transceiver: the PCIe slot or an SFP cage",
+      "peripheral": "pcie",
+      "board": "core",
+      "aliases": [
+        "MGT_CLK1_P"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "G3",
+      "signal": "DDR3_D9",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "G11",
+      "signal": "CFGBVS_0",
+      "purpose": "the configuration bank voltage select",
+      "peripheral": "config",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "H3",
+      "signal": "DDR3_D8",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "H8",
+      "signal": "VCCO_0",
+      "purpose": "a bank's supply",
+      "peripheral": "power",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "H16",
+      "signal": "VCCO_15",
+      "purpose": "a bank's supply",
+      "peripheral": "power",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "J7",
+      "signal": "DDR3_CLK0_P",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "K6",
+      "signal": "DDR3_D21",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "K10",
+      "signal": "VCCBATT_0",
+      "purpose": "the battery input for the encryption key",
+      "peripheral": "power",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "L3",
+      "signal": "DDR3_D18",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "L4",
+      "signal": "DDR3_D16",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "L5",
+      "signal": "BOOT",
+      "purpose": "a configuration mode input",
+      "peripheral": "config",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "L9",
+      "signal": "VREFP_0",
+      "purpose": "a bank's reference voltage",
+      "peripheral": "power",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "L10",
+      "signal": "XADC_VP",
+      "purpose": "the temperature diode",
+      "peripheral": "xadc",
+      "board": "core",
+      "aliases": [
+        "DXN_0"
+      ],
+      "note": "the schematics call this ball DXN_0, of the thermal, and the manual calls it XADC_VP, of the xadc",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "L12",
+      "signal": "CCLK_0",
+      "purpose": "the N25Q128 configuration flash on the core board",
+      "peripheral": "config",
+      "board": "core",
+      "aliases": [
+        "QSPI_CLK"
+      ],
+      "note": "the schematics call this ball QSPI_CLK, of the flash, and the manual calls it CCLK_0, of the config",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "M1",
+      "signal": "DDR3_DQS2_P",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "M5",
+      "signal": "DDR3_DM3",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "M7",
+      "signal": "DDR3_RESET",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "M9",
+      "signal": "XADC_VN",
+      "purpose": "an analog input of the XADC",
+      "peripheral": "xadc",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "N9",
+      "signal": "DXP_0",
+      "purpose": "the temperature diode",
+      "peripheral": "thermal",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "N12",
+      "signal": "INIT_B_0",
+      "purpose": "a configuration line",
+      "peripheral": "config",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "P6",
+      "signal": "DDR3_D30",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "P18",
+      "signal": "VCCO_14",
+      "purpose": "a bank's supply",
+      "peripheral": "power",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "R13",
+      "signal": "FPGA_TDI",
+      "purpose": "the JTAG port",
+      "peripheral": "config",
+      "board": "core",
+      "aliases": [
+        "TDO_0"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "R20",
+      "signal": "LED1",
+      "purpose": "a user LED on the carrier, lit when driven low",
+      "peripheral": "led",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "T5",
+      "signal": "DDR3_CKE0",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "T13",
+      "signal": "FPGA_TMS",
+      "purpose": "the JTAG port",
+      "peripheral": "config",
+      "board": "core",
+      "aliases": [
+        "TCK_0"
+      ],
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "U1",
+      "signal": "DDR3_A13",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "U2",
+      "signal": "DDR3_A9",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "U3",
+      "signal": "DDR3_A5",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "U5",
+      "signal": "DDR3_ODT",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "U8",
+      "signal": "PROGRAM_B_0",
+      "purpose": "a configuration line",
+      "peripheral": "config",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "U13",
+      "signal": "FPGA_TDO",
+      "purpose": "the JTAG port",
+      "peripheral": "config",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "U33",
+      "signal": "MGTAVTT",
+      "purpose": "a transceiver supply",
+      "peripheral": "power",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "V2",
+      "signal": "DDR3_A8",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "V4",
+      "signal": "DDR3_RAS",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "V12",
+      "signal": "FPGA_TCK",
+      "purpose": "the JTAG port",
+      "peripheral": "config",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "W1",
+      "signal": "DDR3_A6",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "W2",
+      "signal": "DDR3_A11",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "Y3",
+      "signal": "DDR3_BA1",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AA1",
+      "signal": "DDR3_WE",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AA5",
+      "signal": "DDR3_A2",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AB3",
+      "signal": "DDR3_S0",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AB4",
+      "signal": "VCCO_34",
+      "purpose": "a bank's supply",
+      "peripheral": "power",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AB14",
+      "signal": "VCCO_13",
+      "purpose": "a bank's supply",
+      "peripheral": "power",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "T14",
+      "bank": 13,
+      "function": "IO_L15P_T2_DQS_13",
+      "net": "B13_L15_P",
+      "signal": "IO2_2P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "T15",
+      "bank": 13,
+      "function": "IO_L15N_T2_DQS_13",
+      "net": "B13_L15_N",
+      "signal": "IO2_2N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "T16",
+      "bank": 13,
+      "function": "IO_L17P_T2_13",
+      "net": "B13_L17_P",
+      "signal": "IO2_10P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "U15",
+      "bank": 13,
+      "function": "IO_L14P_T2_SRCC_13",
+      "net": "B13_L14_P",
+      "signal": "IO2_3P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "U16",
+      "bank": 13,
+      "function": "IO_L17N_T2_13",
+      "net": "B13_L17_N",
+      "signal": "IO2_10N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "V10",
+      "bank": 13,
+      "function": "IO_L10P_T1_13",
+      "net": "B13_L10_P",
+      "signal": "IO2_7P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "V13",
+      "bank": 13,
+      "function": "IO_L13P_T2_MRCC_13",
+      "net": "B13_L13_P",
+      "signal": "IO2_4P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "V14",
+      "bank": 13,
+      "function": "IO_L13N_T2_MRCC_13",
+      "net": "B13_L13_N",
+      "signal": "IO2_4N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "V15",
+      "bank": 13,
+      "function": "IO_L14N_T2_SRCC_13",
+      "net": "B13_L14_N",
+      "signal": "IO2_3N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "W10",
+      "bank": 13,
+      "net": "B13_L10_N",
+      "signal": "IO2_7N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "W11",
+      "bank": 13,
+      "function": "IO_L12P_T1_MRCC_13",
+      "net": "B13_L12_P",
+      "signal": "IO2_5P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "W12",
+      "bank": 13,
+      "function": "IO_L12N_T1_MRCC_13",
+      "net": "B13_L12_N",
+      "signal": "IO2_5N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "W14",
+      "bank": 13,
+      "function": "IO_L6P_T0_13",
+      "net": "B13_L6_P",
+      "signal": "IO2_14N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "W15",
+      "bank": 13,
+      "function": "IO_L16P_T2_13",
+      "net": "B13_L16_P",
+      "signal": "IO2_1P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "W16",
+      "bank": 13,
+      "function": "IO_L16N_T2_13",
+      "net": "B13_L16_N",
+      "signal": "IO2_1N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "Y11",
+      "bank": 13,
+      "function": "IO_L11P_T1_SRCC_13",
+      "net": "B13_L11_P",
+      "signal": "IO2_6P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "Y12",
+      "bank": 13,
+      "function": "IO_L11N_T1_SRCC_13",
+      "net": "B13_L11_N",
+      "signal": "IO2_6N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "Y13",
+      "bank": 13,
+      "function": "IO_L5P_T0_13",
+      "net": "B13_L5_P",
+      "signal": "IO2_13N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "Y14",
+      "bank": 13,
+      "function": "IO_L6N_T0_VREF_13",
+      "net": "B13_L6_N",
+      "signal": "IO2_14P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "Y16",
+      "bank": 13,
+      "function": "IO_L1P_T0_13",
+      "net": "B13_L1_P",
+      "signal": "IO2_15N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "Y17",
+      "bank": 13,
+      "net": "B13_IO0",
+      "signal": "9134_NRESET",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "AA9",
+      "bank": 13,
+      "function": "IO_L8P_T1_13",
+      "net": "B13_L8_P",
+      "signal": "IO2_9N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AA10",
+      "bank": 13,
+      "function": "IO_L9P_T1_DQS_13",
+      "net": "B13_L9_P",
+      "signal": "IO2_8N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AA11",
+      "bank": 13,
+      "net": "B13_L9_N",
+      "signal": "IO2_8P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AA13",
+      "bank": 13,
+      "function": "IO_L3P_T0_DQS_13",
+      "net": "B13_L3_P",
+      "signal": "IO2_11N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AA14",
+      "bank": 13,
+      "function": "IO_L5N_T0_13",
+      "net": "B13_L5_N",
+      "signal": "IO2_13P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AA15",
+      "bank": 13,
+      "function": "IO_L4P_T0_13",
+      "net": "B13_L4_P",
+      "signal": "IO2_17N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AA16",
+      "bank": 13,
+      "net": "B13_L1_N",
+      "signal": "IO2_15P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AB10",
+      "bank": 13,
+      "function": "IO_L8N_T1_13",
+      "net": "B13_L8_N",
+      "signal": "IO2_9P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AB11",
+      "bank": 13,
+      "function": "IO_L7P_T1_13",
+      "net": "B13_L7_P",
+      "signal": "IO2_12N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AB12",
+      "bank": 13,
+      "function": "IO_L7N_T1_13",
+      "net": "B13_L7_N",
+      "signal": "IO2_12P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AB13",
+      "bank": 13,
+      "function": "IO_L3N_T0_DQS_13",
+      "net": "B13_L3_N",
+      "signal": "IO2_11P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AB15",
+      "bank": 13,
+      "function": "IO_L4N_T0_13",
+      "net": "B13_L4_N",
+      "signal": "IO2_17P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AB16",
+      "bank": 13,
+      "function": "IO_L2P_T0_13",
+      "net": "B13_L2_P",
+      "signal": "IO2_16N",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AB17",
+      "bank": 13,
+      "net": "B13_L2_N",
+      "signal": "IO2_16P",
+      "purpose": "the second expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "N13",
+      "bank": 14,
+      "function": "IO_L23P_T3_A03_D19_14",
+      "net": "B14_L23_P",
+      "signal": "ETH_MDC",
+      "purpose": "the JL2121 gigabit PHY, on RGMII",
+      "peripheral": "ethernet",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "N14",
+      "bank": 14,
+      "function": "IO_L23N_T3_A02_D18_14",
+      "net": "B14_L23_N",
+      "signal": "ETH_TXD0",
+      "purpose": "the JL2121 gigabit PHY, on RGMII",
+      "peripheral": "ethernet",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "N15",
+      "bank": 14,
+      "function": "IO_25_14",
+      "net": "B14_IO25",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "N17",
+      "bank": 14,
+      "function": "IO_L21P_T3_DQS_14",
+      "net": "B14_L21_P",
+      "signal": "ETH_TXCTL",
+      "purpose": "the JL2121 gigabit PHY, on RGMII",
+      "peripheral": "ethernet",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "P14",
+      "bank": 14,
+      "function": "IO_L19P_T3_A10_D26_14",
+      "net": "B14_L19_P",
+      "signal": "ETH_MDIO",
+      "purpose": "the JL2121 gigabit PHY, on RGMII",
+      "peripheral": "ethernet",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "P15",
+      "bank": 14,
+      "function": "IO_L22P_T3_A05_D21_14",
+      "net": "B14_L22_P",
+      "signal": "ETH_TXCK",
+      "purpose": "the JL2121 gigabit PHY, on RGMII",
+      "peripheral": "ethernet",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "P16",
+      "bank": 14,
+      "function": "IO_L24P_T3_A01_D17_14",
+      "net": "B14_L24_P",
+      "signal": "ETH_TXD1",
+      "purpose": "the JL2121 gigabit PHY, on RGMII",
+      "peripheral": "ethernet",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "P17",
+      "bank": 14,
+      "function": "IO_L21N_T3_DQS_A06_D22_14",
+      "net": "B14_L21_N",
+      "signal": "ETH_RXD3",
+      "purpose": "the JL2121 gigabit PHY, on RGMII",
+      "peripheral": "ethernet",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "P19",
+      "bank": 14,
+      "function": "IO_L5P_T0_D06_14",
+      "net": "B14_L5_P",
+      "signal": "ETH_RXD0",
+      "purpose": "the JL2121 gigabit PHY, on RGMII",
+      "peripheral": "ethernet",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "P20",
+      "bank": 14,
+      "function": "IO_0_14",
+      "net": "B14_IO0",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "P21",
+      "bank": 14,
+      "function": "IO_L2P_T0_D02_14",
+      "signal": "QSPI_DQ2",
+      "purpose": "the N25Q128 configuration flash on the core board",
+      "peripheral": "flash",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "P22",
+      "bank": 14,
+      "function": "IO_L1P_T0_D00_MOSI_14",
+      "signal": "QSPI_DQ0",
+      "purpose": "the N25Q128 configuration flash on the core board",
+      "peripheral": "flash",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "R14",
+      "bank": 14,
+      "function": "IO_L19N_T3_A09_D25_VREF_14",
+      "net": "B14_L19_N",
+      "signal": "ETH_RESET",
+      "purpose": "the JL2121 gigabit PHY, on RGMII",
+      "peripheral": "ethernet",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "R16",
+      "bank": 14,
+      "function": "IO_L22N_T3_A04_D20_14",
+      "net": "B14_L22_N",
+      "signal": "ETH_TXD3",
+      "purpose": "the JL2121 gigabit PHY, on RGMII",
+      "peripheral": "ethernet",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "R17",
+      "bank": 14,
+      "function": "IO_L24N_T3_A00_D16_14",
+      "net": "B14_L24_N",
+      "signal": "ETH_TXD2",
+      "purpose": "the JL2121 gigabit PHY, on RGMII",
+      "peripheral": "ethernet",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "R18",
+      "bank": 14,
+      "function": "IO_L20P_T3_A08_D24_14",
+      "net": "B14_L20_P",
+      "signal": "9134_VS",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "R19",
+      "bank": 14,
+      "function": "IO_L5N_T0_D07_14",
+      "net": "B14_L5_N",
+      "signal": "ETH_RXCTL",
+      "purpose": "the JL2121 gigabit PHY, on RGMII",
+      "peripheral": "ethernet",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "R21",
+      "bank": 14,
+      "function": "IO_L2N_T0_D03_14",
+      "signal": "QSPI_DQ3",
+      "purpose": "the N25Q128 configuration flash on the core board",
+      "peripheral": "flash",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "R22",
+      "bank": 14,
+      "function": "IO_L1N_T0_D01_DIN_14",
+      "signal": "QSPI_DQ1",
+      "purpose": "the N25Q128 configuration flash on the core board",
+      "peripheral": "flash",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "T18",
+      "bank": 14,
+      "function": "IO_L20N_T3_A07_D23_14",
+      "net": "B14_L20_N",
+      "signal": "9134_HS",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "T19",
+      "bank": 14,
+      "function": "IO_L6P_T0_FCS_B_14",
+      "signal": "QSPI_CS",
+      "purpose": "the N25Q128 configuration flash on the core board",
+      "peripheral": "flash",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "T20",
+      "bank": 14,
+      "function": "IO_L6N_T0_D08_VREF_14",
+      "net": "B14_L6_N",
+      "signal": "9134_D10",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "T21",
+      "bank": 14,
+      "function": "IO_L4P_T0_D04_14",
+      "net": "B14_L4_P",
+      "signal": "9134_D7",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "U17",
+      "bank": 14,
+      "function": "IO_L18P_T2_A12_D28_14",
+      "net": "B14_L18_P",
+      "signal": "ETH_RXD2",
+      "purpose": "the JL2121 gigabit PHY, on RGMII",
+      "peripheral": "ethernet",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "U18",
+      "bank": 14,
+      "function": "IO_L18N_T2_A11_D27_14",
+      "net": "B14_L18_N",
+      "signal": "ETH_RXD1",
+      "purpose": "the JL2121 gigabit PHY, on RGMII",
+      "peripheral": "ethernet",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "U20",
+      "bank": 14,
+      "function": "IO_L11P_T1_SRCC_14",
+      "net": "B14_L11_P",
+      "signal": "9134_D22",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "U21",
+      "bank": 14,
+      "function": "IO_L4N_T0_D05_14",
+      "net": "B14_L4_N",
+      "signal": "9134_D6",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "U22",
+      "bank": 14,
+      "function": "IO_L3P_T0_DQS_PUDC_B_14",
+      "net": "B14_L3_P",
+      "signal": "9134_DE",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "V17",
+      "bank": 14,
+      "function": "IO_L16P_T2_CSI_B_14",
+      "net": "B14_L16_P",
+      "signal": "9134_D20",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "V18",
+      "bank": 14,
+      "function": "IO_L14P_T2_SRCC_14",
+      "net": "B14_L14_P",
+      "signal": "ETH_RXCK",
+      "purpose": "the JL2121 gigabit PHY, on RGMII",
+      "peripheral": "ethernet",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "V19",
+      "bank": 14,
+      "function": "IO_L14N_T2_SRCC_14",
+      "net": "B14_L14_N",
+      "signal": "9134_D23",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "V20",
+      "bank": 14,
+      "function": "IO_L11N_T1_SRCC_14",
+      "net": "B14_L11_N",
+      "signal": "9134_D21",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "V22",
+      "bank": 14,
+      "function": "IO_L3N_T0_DQS_EMCCLK_14",
+      "net": "B14_L3_N",
+      "signal": "9134_D0",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "W17",
+      "bank": 14,
+      "function": "IO_L16N_T2_A15_D31_14",
+      "net": "B14_L16_N",
+      "signal": "9134_D19",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "W19",
+      "bank": 14,
+      "function": "IO_L12P_T1_MRCC_14",
+      "net": "B14_L12_P",
+      "signal": "9134_D3",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "W20",
+      "bank": 14,
+      "function": "IO_L12N_T1_MRCC_14",
+      "net": "B14_L12_N",
+      "signal": "9134_D4",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "W21",
+      "bank": 14,
+      "function": "IO_L7P_T1_D09_14",
+      "net": "B14_L7_P",
+      "signal": "9134_D8",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "W22",
+      "bank": 14,
+      "function": "IO_L7N_T1_D10_14",
+      "net": "B14_L7_N",
+      "signal": "9134_D9",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "Y18",
+      "bank": 14,
+      "function": "IO_L13P_T2_MRCC_14",
+      "net": "B14_L13_P",
+      "signal": "9134_D1",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "Y19",
+      "bank": 14,
+      "function": "IO_L13N_T2_MRCC_14",
+      "net": "B14_L13_N",
+      "signal": "9134_D2",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "Y21",
+      "bank": 14,
+      "function": "IO_L9P_T1_DQS_14",
+      "net": "B14_L9_P",
+      "signal": "9134_D5",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "Y22",
+      "bank": 14,
+      "function": "IO_L9N_T1_DQS_D13_14",
+      "net": "B14_L9_N",
+      "signal": "9134_CLK",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "AA18",
+      "bank": 14,
+      "function": "IO_L17P_T2_A14_D30_14",
+      "net": "B14_L17_P",
+      "signal": "9134_D12",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "AA19",
+      "bank": 14,
+      "function": "IO_L15P_T2_DQS_RDWR_B_14",
+      "net": "B14_L15_P",
+      "signal": "9134_D13",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "AA20",
+      "bank": 14,
+      "function": "IO_L8P_T1_D11_14",
+      "net": "B14_L8_P",
+      "signal": "9134_D15",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "AA21",
+      "bank": 14,
+      "function": "IO_L8N_T1_D12_14",
+      "net": "B14_L8_N",
+      "signal": "9134_D16",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "AB18",
+      "bank": 14,
+      "function": "IO_L17N_T2_A13_D29_14",
+      "net": "B14_L17_N",
+      "signal": "9134_D11",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "AB20",
+      "bank": 14,
+      "function": "IO_L15N_T2_DQS_DOUT_CSO_B_14",
+      "net": "B14_L15_N",
+      "signal": "9134_D14",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "AB21",
+      "bank": 14,
+      "function": "IO_L10P_T1_D14_14",
+      "net": "B14_L10_P",
+      "signal": "9134_D18",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "AB22",
+      "bank": 14,
+      "function": "IO_L10N_T1_D15_14",
+      "net": "B14_L10_N",
+      "signal": "9134_D17",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "G13",
+      "bank": 15,
+      "function": "IO_L1N_T0_AD0N_15",
+      "net": "B15_L1_N",
+      "signal": "HDMI_SDA",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "G15",
+      "bank": 15,
+      "function": "IO_L2P_T0_AD8P_15",
+      "net": "B15_L2_P",
+      "signal": "9013_D19",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "G16",
+      "bank": 15,
+      "function": "IO_L2N_T0_AD8N_15",
+      "net": "B15_L2_N",
+      "signal": "9013_D20",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "G17",
+      "bank": 15,
+      "function": "IO_L4P_T0_15",
+      "net": "B15_L4_P",
+      "signal": "9013_D17",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "G18",
+      "bank": 15,
+      "function": "IO_L4N_T0_15",
+      "net": "B15_L4_N",
+      "signal": "9013_D18",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "G20",
+      "bank": 15,
+      "function": "IO_L8N_T1_AD10N_15",
+      "net": "B15_L8_N",
+      "signal": "9013_D14",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "H13",
+      "bank": 15,
+      "function": "IO_L1P_T0_AD0P_15",
+      "net": "B15_L1_P",
+      "signal": "HDMI_SCL",
+      "purpose": "the SiI9134 HDMI encoder",
+      "peripheral": "hdmi",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "H14",
+      "bank": 15,
+      "function": "IO_L3N_T0_DQS_AD1N_15",
+      "net": "B15_L3_N",
+      "signal": "SFP2_TX_DIS",
+      "purpose": "SFP2 Optical Transfer Disable, active high",
+      "peripheral": "sfp",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "H15",
+      "bank": 15,
+      "function": "IO_L5N_T0_AD9N_15",
+      "net": "B15_L5_N",
+      "signal": "SFP1_LOSS",
+      "purpose": "SFP1 Optical LOSS, High level means no light",
+      "peripheral": "sfp",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "H17",
+      "bank": 15,
+      "function": "IO_L6P_T0_15",
+      "net": "B15_L6_P",
+      "signal": "9013_D5",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "H18",
+      "bank": 15,
+      "function": "IO_L6N_T0_VREF_15",
+      "net": "B15_L6_N",
+      "signal": "9013_D6",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "H19",
+      "bank": 15,
+      "function": "IO_L12N_T1_MRCC_15",
+      "net": "B15_L12_N",
+      "signal": "9013_D22",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "H20",
+      "bank": 15,
+      "function": "IO_L8P_T1_AD10P_15",
+      "net": "B15_L8_P",
+      "signal": "9013_D13",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "H22",
+      "bank": 15,
+      "function": "IO_L7N_T1_AD2N_15",
+      "net": "B15_L7_N",
+      "signal": "9013_D12",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "J14",
+      "bank": 15,
+      "function": "IO_L3P_T0_DQS_AD1P_15",
+      "net": "B15_L3_P",
+      "signal": "SFP2_LOSS",
+      "purpose": "SFP2 Optical LOSS, High level means no light",
+      "peripheral": "sfp",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "J15",
+      "bank": 15,
+      "function": "IO_L5P_T0_AD9P_15",
+      "net": "B15_L5_P",
+      "signal": "SFP1_TX_DIS",
+      "purpose": "SFP1 Optical Transfer Disable, active high",
+      "peripheral": "sfp",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "J16",
+      "bank": 15,
+      "function": "IO_0_15",
+      "net": "B15_IO0",
+      "signal": "9013_D16",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "J17",
+      "bank": 15,
+      "function": "IO_L21N_T3_DQS_A18_15",
+      "net": "B15_L21_N",
+      "signal": "KEY4",
+      "purpose": "a user button on the carrier",
+      "peripheral": "button",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "J19",
+      "bank": 15,
+      "function": "IO_L12P_T1_MRCC_15",
+      "net": "B15_L12_P",
+      "signal": "9013_D21",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "J20",
+      "bank": 15,
+      "function": "IO_L11P_T1_SRCC_15",
+      "net": "B15_L11_P",
+      "signal": "9013_D23",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "J21",
+      "bank": 15,
+      "function": "IO_L11N_T1_SRCC_15",
+      "net": "B15_L11_N",
+      "signal": "9013_NRESET",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "J22",
+      "bank": 15,
+      "function": "IO_L7P_T1_AD2P_15",
+      "net": "B15_L7_P",
+      "signal": "9013_D11",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "K13",
+      "bank": 15,
+      "function": "IO_L19P_T3_A22_15",
+      "net": "B15_L19_P",
+      "signal": "LED4",
+      "purpose": "a user LED on the carrier, lit when driven low",
+      "peripheral": "led",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "K14",
+      "bank": 15,
+      "function": "IO_L19N_T3_A21_VREF_15",
+      "net": "B15_L19_N",
+      "signal": "LED3",
+      "purpose": "a user LED on the carrier, lit when driven low",
+      "peripheral": "led",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "K16",
+      "bank": 15,
+      "function": "IO_L23N_T3_FWE_B_15",
+      "net": "B15_L23_N",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "K17",
+      "bank": 15,
+      "function": "IO_L21P_T3_DQS_15",
+      "net": "B15_L21_P",
+      "signal": "KEY3",
+      "purpose": "a user button on the carrier",
+      "peripheral": "button",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "K18",
+      "bank": 15,
+      "function": "IO_L13P_T2_MRCC_15",
+      "net": "B15_L13_P",
+      "signal": "9013_CLK",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "K19",
+      "bank": 15,
+      "function": "IO_L13N_T2_MRCC_15",
+      "net": "B15_L13_N",
+      "signal": "9013_D4",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "K21",
+      "bank": 15,
+      "function": "IO_L9P_T1_DQS_AD3P_15",
+      "net": "B15_L9_P",
+      "signal": "9013_D10",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "K22",
+      "bank": 15,
+      "function": "IO_L9N_T1_DQS_AD3N_15",
+      "net": "B15_L9_N",
+      "signal": "9013_D9",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "L13",
+      "bank": 15,
+      "function": "IO_L20N_T3_A19_15",
+      "net": "B15_L20_N",
+      "signal": "LED1",
+      "purpose": "a user LED on the carrier, lit when driven low",
+      "peripheral": "led",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "L14",
+      "bank": 15,
+      "function": "IO_L22P_T3_A17_15",
+      "net": "B15_L22_P",
+      "signal": "UART1_RXD",
+      "purpose": "the CP2102N USB serial bridge",
+      "peripheral": "serial",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "L15",
+      "bank": 15,
+      "function": "IO_L22N_T3_A16_15",
+      "net": "B15_L22_N",
+      "signal": "UART1_TXD",
+      "purpose": "the CP2102N USB serial bridge",
+      "peripheral": "serial",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "L16",
+      "bank": 15,
+      "function": "IO_L23P_T3_FOE_B_15",
+      "net": "B15_L23_P",
+      "signal": "PCIE_PERST",
+      "purpose": "the PCIe slot, x4 in size and x2 in lanes",
+      "peripheral": "pcie",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "L18",
+      "bank": 15,
+      "function": "IO_L16N_T2_A27_15",
+      "net": "B15_L16_N",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "L19",
+      "bank": 15,
+      "function": "IO_L14P_T2_SRCC_15",
+      "net": "B15_L14_P",
+      "signal": "KEY1",
+      "purpose": "a user button on the carrier",
+      "peripheral": "button",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "L20",
+      "bank": 15,
+      "function": "IO_L14N_T2_SRCC_15",
+      "net": "B15_L14_N",
+      "signal": "KEY2",
+      "purpose": "a user button on the carrier",
+      "peripheral": "button",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "L21",
+      "bank": 15,
+      "function": "IO_L10N_T1_AD11N_15",
+      "net": "B15_L10_N",
+      "signal": "9013_D2",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "M13",
+      "bank": 15,
+      "function": "IO_L20P_T3_A20_15",
+      "net": "B15_L20_P",
+      "signal": "LED2",
+      "purpose": "a user LED on the carrier, lit when driven low",
+      "peripheral": "led",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "M15",
+      "bank": 15,
+      "function": "IO_L24P_T3_RS1_15",
+      "net": "B15_L24_P",
+      "signal": "I2C_SCL",
+      "purpose": "an I2C bus",
+      "peripheral": "i2c",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "M16",
+      "bank": 15,
+      "function": "IO_L24N_T3_RS0_15",
+      "net": "B15_L24_N",
+      "signal": "I2C_SDA",
+      "purpose": "an I2C bus",
+      "peripheral": "i2c",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "M17",
+      "bank": 15,
+      "function": "IO_25_15",
+      "net": "B15_IO25",
+      "signal": "9013_D15",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "M18",
+      "bank": 15,
+      "function": "IO_L16P_T2_A28_15",
+      "net": "B15_L16_P",
+      "signal": "9013_VS",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "M20",
+      "bank": 15,
+      "function": "IO_L18N_T2_A23_15",
+      "net": "B15_L18_N",
+      "signal": "9013_D0",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "M21",
+      "bank": 15,
+      "function": "IO_L10P_T1_AD11P_15",
+      "net": "B15_L10_P",
+      "signal": "9013_D3",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "M22",
+      "bank": 15,
+      "function": "IO_L15N_T2_DQS_ADV_B_15",
+      "net": "B15_L15_N",
+      "signal": "9013_D8",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "N18",
+      "bank": 15,
+      "function": "IO_L17P_T2_A26_15",
+      "net": "B15_L17_P",
+      "signal": "9013_HS",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "N19",
+      "bank": 15,
+      "function": "IO_L17N_T2_A25_15",
+      "net": "B15_L17_N",
+      "signal": "9013_DE",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "N20",
+      "bank": 15,
+      "function": "IO_L18P_T2_A24_15",
+      "net": "B15_L18_P",
+      "signal": "9013_D1",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "N22",
+      "bank": 15,
+      "function": "IO_L15P_T2_DQS_15",
+      "net": "B15_L15_P",
+      "signal": "9013_D7",
+      "purpose": "the LCD and camera header",
+      "peripheral": "lcd",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "A13",
+      "bank": 16,
+      "function": "IO_L10P_T1_16",
+      "net": "B16_L10_P",
+      "signal": "IO1_14N",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "A14",
+      "bank": 16,
+      "function": "IO_L10N_T1_16",
+      "net": "B16_L10_N",
+      "signal": "IO1_14P",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "A15",
+      "bank": 16,
+      "function": "IO_L9P_T1_DQS_16",
+      "net": "B16_L9_P",
+      "signal": "IO1_12N",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "A16",
+      "bank": 16,
+      "function": "IO_L9N_T1_DQS_16",
+      "net": "B16_L9_N",
+      "signal": "IO1_12P",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "A18",
+      "bank": 16,
+      "function": "IO_L17P_T2_16",
+      "net": "B16_L17_P",
+      "signal": "IO1_5N",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "A19",
+      "bank": 16,
+      "function": "IO_L17N_T2_16",
+      "net": "B16_L17_N",
+      "signal": "IO1_5P",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "A20",
+      "bank": 16,
+      "function": "IO_L16N_T2_16",
+      "net": "B16_L16_N",
+      "signal": "IO1_6P",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "A21",
+      "bank": 16,
+      "function": "IO_L21N_T3_DQS_16",
+      "net": "B16_L21_N",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "B13",
+      "bank": 16,
+      "function": "IO_L8N_T1_16",
+      "net": "B16_L8_N",
+      "signal": "FAN_PWM",
+      "purpose": "the fan header",
+      "peripheral": "fan",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "B15",
+      "bank": 16,
+      "function": "IO_L7P_T1_16",
+      "net": "B16_L7_P",
+      "signal": "IO1_13N",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "B16",
+      "bank": 16,
+      "function": "IO_L7N_T1_16",
+      "net": "B16_L7_N",
+      "signal": "IO1_13P",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "B17",
+      "bank": 16,
+      "function": "IO_L11P_T1_SRCC_16",
+      "net": "B16_L11_P",
+      "signal": "IO1_10N",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "B18",
+      "bank": 16,
+      "function": "IO_L11N_T1_SRCC_16",
+      "net": "B16_L11_N",
+      "signal": "IO1_10P",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "B20",
+      "bank": 16,
+      "function": "IO_L16P_T2_16",
+      "net": "B16_L16_P",
+      "signal": "IO1_6N",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "B21",
+      "bank": 16,
+      "function": "IO_L21P_T3_DQS_16",
+      "net": "B16_L21_P",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "B22",
+      "bank": 16,
+      "function": "IO_L20N_T3_16",
+      "net": "B16_L20_N",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "C13",
+      "bank": 16,
+      "function": "IO_L8P_T1_16",
+      "net": "B16_L8_P",
+      "signal": "SD_CD_N",
+      "purpose": "the micro SD card socket",
+      "peripheral": "sdcard",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "C14",
+      "bank": 16,
+      "function": "IO_L3P_T0_DQS_16",
+      "net": "B16_L3_P",
+      "signal": "IO1_16N",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "C15",
+      "bank": 16,
+      "function": "IO_L3N_T0_DQS_16",
+      "net": "B16_L3_N",
+      "signal": "IO1_16P",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "C17",
+      "bank": 16,
+      "function": "IO_L12N_T1_MRCC_16",
+      "net": "B16_L12_N",
+      "signal": "IO1_11P",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "C18",
+      "bank": 16,
+      "function": "IO_L13P_T2_MRCC_16",
+      "net": "B16_L13_P",
+      "signal": "IO1_9N",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "C19",
+      "bank": 16,
+      "function": "IO_L13N_T2_MRCC_16",
+      "net": "B16_L13_N",
+      "signal": "IO1_9P",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "C20",
+      "bank": 16,
+      "function": "IO_L19N_T3_VREF_16",
+      "net": "B16_L19_N",
+      "signal": "IO1_4P",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "C22",
+      "bank": 16,
+      "function": "IO_L20P_T3_16",
+      "net": "B16_L20_P",
+      "signal": "IO1_2N",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "D14",
+      "bank": 16,
+      "function": "IO_L6P_T0_16",
+      "net": "B16_L6_P",
+      "signal": "SD_DAT1",
+      "purpose": "the micro SD card socket",
+      "peripheral": "sdcard",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "D15",
+      "bank": 16,
+      "function": "IO_L6N_T0_VREF_16",
+      "net": "B16_L6_N",
+      "signal": "SD_DAT0",
+      "purpose": "the micro SD card socket",
+      "peripheral": "sdcard",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "D16",
+      "bank": 16,
+      "function": "IO_L5N_T0_16",
+      "net": "B16_L5_N",
+      "signal": "IO1_15P",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "D17",
+      "bank": 16,
+      "function": "IO_L12P_T1_MRCC_16",
+      "net": "B16_L12_P",
+      "signal": "IO1_11N",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "D19",
+      "bank": 16,
+      "function": "IO_L14N_T2_SRCC_16",
+      "net": "B16_L14_N",
+      "signal": "IO1_8P",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "D20",
+      "bank": 16,
+      "function": "IO_L19P_T3_16",
+      "net": "B16_L19_P",
+      "signal": "IO1_4N",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "D21",
+      "bank": 16,
+      "function": "IO_L23N_T3_16",
+      "net": "B16_L23_N",
+      "signal": "SFP1_IIC_SDA",
+      "purpose": "an SFP cage",
+      "peripheral": "sfp",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "D22",
+      "bank": 16,
+      "function": "IO_L22N_T3_16",
+      "net": "B16_L22_N",
+      "signal": "SFP2_IIC_SDA",
+      "purpose": "an SFP cage",
+      "peripheral": "sfp",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "E13",
+      "bank": 16,
+      "function": "IO_L4P_T0_16",
+      "net": "B16_L4_P",
+      "signal": "SD_CLK",
+      "purpose": "the micro SD card socket",
+      "peripheral": "sdcard",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "E14",
+      "bank": 16,
+      "function": "IO_L4N_T0_16",
+      "net": "B16_L4_N",
+      "signal": "SD_CMD",
+      "purpose": "the micro SD card socket",
+      "peripheral": "sdcard",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "E16",
+      "bank": 16,
+      "function": "IO_L5P_T0_16",
+      "net": "B16_L5_P",
+      "signal": "IO1_15N",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "E17",
+      "bank": 16,
+      "function": "IO_L2N_T0_16",
+      "net": "B16_L2_N",
+      "signal": "IO1_17P",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "E18",
+      "bank": 16,
+      "function": "IO_L15N_T2_DQS_16",
+      "net": "B16_L15_N",
+      "signal": "IO1_7P",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "E19",
+      "bank": 16,
+      "function": "IO_L14P_T2_SRCC_16",
+      "net": "B16_L14_P",
+      "signal": "IO1_8N",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "E21",
+      "bank": 16,
+      "function": "IO_L23P_T3_16",
+      "net": "B16_L23_P",
+      "signal": "SFP1_IIC_SCL",
+      "purpose": "an SFP cage",
+      "peripheral": "sfp",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "E22",
+      "bank": 16,
+      "function": "IO_L22P_T3_16",
+      "net": "B16_L22_P",
+      "signal": "SFP2_IIC_SCL",
+      "purpose": "an SFP cage",
+      "peripheral": "sfp",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "F13",
+      "bank": 16,
+      "function": "IO_L1P_T0_16",
+      "net": "B16_L1_P",
+      "signal": "SD_DAT3",
+      "purpose": "the micro SD card socket",
+      "peripheral": "sdcard",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "F14",
+      "bank": 16,
+      "function": "IO_L1N_T0_16",
+      "net": "B16_L1_N",
+      "signal": "SD_DAT2",
+      "purpose": "the micro SD card socket",
+      "peripheral": "sdcard",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "F15",
+      "bank": 16,
+      "function": "IO_0_16",
+      "net": "B16_IO0",
+      "signal": "RESET",
+      "purpose": "the board's reset button, low while pressed",
+      "peripheral": "reset",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "F16",
+      "bank": 16,
+      "function": "IO_L2P_T0_16",
+      "net": "B16_L2_P",
+      "signal": "IO1_17N",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "F18",
+      "bank": 16,
+      "function": "IO_L15P_T2_DQS_16",
+      "net": "B16_L15_P",
+      "signal": "IO1_7N",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "F19",
+      "bank": 16,
+      "function": "IO_L18P_T2_16",
+      "net": "B16_L18_P",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "F20",
+      "bank": 16,
+      "function": "IO_L18N_T2_16",
+      "net": "B16_L18_N",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "F21",
+      "bank": 16,
+      "function": "IO_25_16",
+      "net": "B16_IO25",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "G21",
+      "bank": 16,
+      "function": "IO_L24P_T3_16",
+      "net": "B16_L24_P",
+      "signal": "IO1_1N",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "G22",
+      "bank": 16,
+      "function": "IO_L24N_T3_16",
+      "net": "B16_L24_N",
+      "signal": "IO1_1P",
+      "purpose": "the first expansion header",
+      "peripheral": "expansion",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B Carrier Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "R2",
+      "bank": 34,
+      "function": "IO_L3N_T0_DQS_34",
+      "signal": "DDR3_CLK0_N",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "R4",
+      "bank": 34,
+      "function": "IO_L13P_T2_MRCC_34",
+      "signal": "SYS_CLK_P",
+      "purpose": "the board's 200 MHz differential clock",
+      "peripheral": "clock",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "T1",
+      "bank": 34,
+      "function": "IO_L1P_T0_34",
+      "signal": "DDR3_A7",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "T4",
+      "bank": 34,
+      "function": "IO_L13N_T2_MRCC_34",
+      "signal": "SYS_CLK_N",
+      "purpose": "the board's 200 MHz differential clock",
+      "peripheral": "clock",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf",
+        "AX7A200B User Manual REV1.0.pdf"
+      ]
+    },
+    {
+      "pin": "V3",
+      "bank": 34,
+      "function": "IO_L6N_T0_VREF_34",
+      "signal": "DDR3_A14",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "V7",
+      "bank": 34,
+      "function": "IO_L19P_T3_34",
+      "net": "B34_L19_P",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "V8",
+      "bank": 34,
+      "net": "B34_L21_N",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "V9",
+      "bank": 34,
+      "function": "IO_L21P_T3_DQS_34",
+      "net": "B34_L21_P",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "W4",
+      "bank": 34,
+      "function": "IO_L12N_T1_MRCC_34",
+      "signal": "DDR3_CAS",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "W7",
+      "bank": 34,
+      "net": "B34_L19_N",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "W9",
+      "bank": 34,
+      "function": "IO_L24P_T3_34",
+      "net": "B34_L24_P",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "Y1",
+      "bank": 34,
+      "function": "IO_L5N_T0_34",
+      "signal": "DDR3_A10",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "Y2",
+      "bank": 34,
+      "function": "IO_L4N_T0_34",
+      "signal": "DDR3_A12",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "Y4",
+      "bank": 34,
+      "function": "IO_L11P_T1_SRCC_34",
+      "signal": "DDR3_BA2",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "Y6",
+      "bank": 34,
+      "function": "IO_L18P_T2_34",
+      "net": "B34_L18_P",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "Y7",
+      "bank": 34,
+      "function": "IO_L23N_T3_34",
+      "net": "B34_L23_N",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "Y8",
+      "bank": 34,
+      "function": "IO_L23P_T3_34",
+      "net": "B34_L23_P",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "Y9",
+      "bank": 34,
+      "net": "B34_L24_N",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AA3",
+      "bank": 34,
+      "function": "IO_L9N_T1_DQS_34",
+      "signal": "DDR3_BA0",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AA4",
+      "bank": 34,
+      "function": "IO_L11N_T1_SRCC_34",
+      "signal": "DDR3_A0",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AA6",
+      "bank": 34,
+      "net": "B34_L18_N",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AA8",
+      "bank": 34,
+      "function": "IO_L22P_T3_34",
+      "net": "B34_L22_P",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AB1",
+      "bank": 34,
+      "function": "IO_L7N_T1_34",
+      "signal": "DDR3_A4",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AB2",
+      "bank": 34,
+      "function": "IO_L8N_T1_34",
+      "signal": "DDR3_A1",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AB5",
+      "bank": 34,
+      "function": "IO_L10N_T1_34",
+      "signal": "DDR3_A3",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AB6",
+      "bank": 34,
+      "net": "B34_L20_N",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AB7",
+      "bank": 34,
+      "function": "IO_L20P_T3_34",
+      "net": "B34_L20_P",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "AB8",
+      "bank": 34,
+      "net": "B34_L22_N",
+      "board": "carrier",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "B1",
+      "bank": 35,
+      "function": "IO_L1P_T0_AD4P_35",
+      "signal": "DDR3_D6",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "C2",
+      "bank": 35,
+      "function": "IO_L2P_T0_AD12P_35",
+      "signal": "DDR3_D0",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "D1",
+      "bank": 35,
+      "function": "IO_L3N_T0_DQS_AD5N_35",
+      "signal": "DDR3_DQS0_N",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "E1",
+      "bank": 35,
+      "function": "IO_L3P_T0_DQS_AD5P_35",
+      "signal": "DDR3_DQS0_P",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "E2",
+      "bank": 35,
+      "function": "IO_L4P_T0_35",
+      "signal": "DDR3_D7",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "F1",
+      "bank": 35,
+      "function": "IO_L5N_T0_AD13N_35",
+      "signal": "DDR3_D5",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "G1",
+      "bank": 35,
+      "function": "IO_L5P_T0_AD13P_35",
+      "signal": "DDR3_D1",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "G2",
+      "bank": 35,
+      "function": "IO_L8N_T1_AD14N_35",
+      "signal": "DDR3_DM1",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "H2",
+      "bank": 35,
+      "function": "IO_L8P_T1_AD14P_35",
+      "signal": "DDR3_D10",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "H4",
+      "bank": 35,
+      "function": "IO_L12P_T1_MRCC_35",
+      "signal": "DDR3_D15",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "H5",
+      "bank": 35,
+      "function": "IO_L10N_T1_AD15N_35",
+      "signal": "DDR3_D11",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "J1",
+      "bank": 35,
+      "function": "IO_L7N_T1_AD6N_35",
+      "signal": "DDR3_D12",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "J2",
+      "bank": 35,
+      "function": "IO_L9N_T1_DQS_AD7N_35",
+      "signal": "DDR3_DQS1_N",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "J4",
+      "bank": 35,
+      "function": "IO_L13N_T2_MRCC_35",
+      "signal": "DDR3_D22",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "J5",
+      "bank": 35,
+      "function": "IO_L10P_T1_AD15P_35",
+      "signal": "DDR3_D13",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "J6",
+      "bank": 35,
+      "function": "IO_L17N_T2_35",
+      "signal": "DDR3_D19",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "K1",
+      "bank": 35,
+      "function": "IO_L7P_T1_AD6P_35",
+      "signal": "DDR3_D14",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "K2",
+      "bank": 35,
+      "function": "IO_L9P_T1_DQS_AD7P_35",
+      "signal": "DDR3_DQS1_P",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "K3",
+      "bank": 35,
+      "function": "IO_L14N_T2_SRCC_35",
+      "signal": "DDR3_D20",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "L1",
+      "bank": 35,
+      "function": "IO_L15N_T2_DQS_35",
+      "signal": "DDR3_DQS2_N",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "M2",
+      "bank": 35,
+      "function": "IO_L16N_T2_35",
+      "signal": "DDR3_DM2",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "M3",
+      "bank": 35,
+      "function": "IO_L16P_T2_35",
+      "signal": "DDR3_D17",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "M6",
+      "bank": 35,
+      "function": "IO_L23P_T3_35",
+      "signal": "DDR3_D28",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "N2",
+      "bank": 35,
+      "function": "IO_L22N_T3_35",
+      "signal": "DDR3_D27",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "N4",
+      "bank": 35,
+      "function": "IO_L19P_T3_35",
+      "signal": "DDR3_D25",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "N5",
+      "bank": 35,
+      "function": "IO_L24N_T3_35",
+      "signal": "DDR3_D29",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "P1",
+      "bank": 35,
+      "function": "IO_L20N_T3_35",
+      "signal": "DDR3_D24",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "P2",
+      "bank": 35,
+      "function": "IO_L22P_T3_35",
+      "signal": "DDR3_D31",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "P4",
+      "bank": 35,
+      "function": "IO_L21N_T3_DQS_35",
+      "signal": "DDR3_DQS3_N",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "P5",
+      "bank": 35,
+      "function": "IO_L21P_T3_DQS_35",
+      "signal": "DDR3_DQS3_P",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    },
+    {
+      "pin": "R1",
+      "bank": 35,
+      "function": "IO_L20P_T3_35",
+      "signal": "DDR3_D26",
+      "purpose": "the DDR3 memory on the core board",
+      "peripheral": "memory",
+      "board": "core",
+      "sources": [
+        "AC7A200 Core Board Schematic.pdf"
+      ]
+    }
+  ]
+}

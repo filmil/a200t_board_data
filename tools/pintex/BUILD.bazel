@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: Apache-2.0
+# Writes the document's tables from data/pins.json, at build time, so
+# that a document which builds cannot disagree with the data.
+load("@rules_go//go:def.bzl", "go_binary", "go_library")
+
+package(default_visibility = ["//visibility:public"])
+
+go_library(
+    name = "pintex_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/filmil/a200t_board_data/tools/pintex",
+)
+
+go_binary(
+    name = "pintex",
+    embed = [":pintex_lib"],
+)

@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: Apache-2.0
+module(
+    name = "a200t_board_data",
+    version = "0.0.0",
+)
+
+# LaTeX for the document. The hermetic toolchain this root module
+# registers wins over the ruleset's `system` one, so the build needs
+# nothing installed on the machine.
+bazel_dep(name = "rules_latex_host", version = "0.3.0")
+
+hermetic_latex = use_extension(
+    "@rules_latex_host//latex:extensions.bzl",
+    "hermetic_latex",
+)
+hermetic_latex.toolchain()
+use_repo(hermetic_latex, "hermetic_latex", "hermetic_latex_ghostscript")
+
+register_toolchains("@hermetic_latex//:all")
+
+# Go for the two tools: the one that reads the vendor's documents and
+# the one that writes the document's tables from the result.
+bazel_dep(name = "rules_go", version = "0.61.1")
+
+go_sdk = use_extension("@rules_go//go:extensions.bzl", "go_sdk")
+go_sdk.download(version = "1.25.1")
+
+bazel_dep(name = "rules_shell", version = "0.8.0")

@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: Apache-2.0
+# Reads the vendor's documents and writes the pin table. The documents
+# are the board vendor's and are not in this repository, so this target
+# is run by hand when the table is regenerated:
+#
+#   bazel run //tools/pinextract -- -core core.txt -carrier carrier.txt \
+#       -manual manual.txt -out $PWD/data/pins.json
+#
+# The text files come from `pdftotext -layout` over the PDFs; the
+# README says where the PDFs are and what the command is.
+load("@rules_go//go:def.bzl", "go_binary", "go_library")
+
+package(default_visibility = ["//visibility:public"])
+
+go_library(
+    name = "pinextract_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/filmil/a200t_board_data/tools/pinextract",
+)
+
+go_binary(
+    name = "pinextract",
+    embed = [":pinextract_lib"],
+)
