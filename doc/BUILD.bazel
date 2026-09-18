@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: Apache-2.0
+# The document: what the board is, read out of the vendor's own
+# documents, with every table generated from data/pins.json.
+#
+#   bazel build //doc:a200t     -> bazel-bin/doc/a200t.pdf
+load("@rules_latex_host//latex:defs.bzl", "latex_document")
+
+package(default_visibility = ["//visibility:public"])
+
+genrule(
+    name = "tables",
+    srcs = ["//data:pins.json"],
+    outs = [
+        "tables.tex",
+        "counts.tex",
+    ],
+    cmd = ("$(location //tools/pintex) -in $(location //data:pins.json) " +
+           "-out $(location tables.tex) -counts $(location counts.tex)"),
+    tools = ["//tools/pintex"],
+)
+
+latex_document(
+    name = "a200t",
+    main = "a200t.tex",
+    data = [":tables"],
+)

@@ -1,0 +1,149 @@
+% SPDX-License-Identifier: Apache-2.0
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+
+\title{The Alinx AX7A200B, read out of its own documents}
+\author{filmil/a200t\_board\_data}
+\date{Built by Bazel from \texttt{data/pins.json}}
+
+\input{counts.tex}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This document is what the vendor's schematics and user manual say about
+one board, the Alinx AX7A200B: a carrier board with an AC7A200 core
+board on it, carrying an \texttt{xc7a200tfbg484-2}. Every table here is
+generated at build time from \texttt{data/pins.json}, which a tool in
+this repository extracts from those documents. Nothing is typed in by
+hand, so the document cannot drift from the data, and the data cannot
+drift from the documents without the tool being re-run.
+\end{abstract}
+
+\section{What the board is}
+
+The board is two boards. The core board, an AC7A200, carries the FPGA,
+its DDR3 memory, its configuration flash and its clock. The carrier
+carries everything a design talks to: the serial bridge, the LEDs and
+buttons, the Ethernet PHY, the HDMI encoder, the PCIe slot, the SFP
+cages and the headers. The two meet at a pair of board-to-board
+connectors, and a signal crosses them on a net named after the FPGA bank
+and the differential pair it comes from, such as \texttt{B15\_L23\_P}.
+
+That naming is why a pin table for this board is work. The core board's
+schematic says which ball carries \texttt{B15\_L23\_P}; the carrier's
+schematic says what sits on the other end of it; the user manual names
+some of those signals and says nothing about others. This repository
+joins the three.
+
+The result covers \ballcount{} balls, \namedcount{} of which carry a
+named signal, across \bankcount{} I/O banks.
+
+\section{Where the data comes from}
+
+Three documents, each answering a different question.
+
+\begin{itemize}
+  \item \emph{AC7A200 Core Board Schematic.pdf} says which FPGA ball
+    carries which net, or which of the core board's own signals, and
+    what Xilinx calls that ball, such as
+    \texttt{IO\_L23P\_T3\_FOE\_B\_15}.
+  \item \emph{AX7A200B Carrier Board Schematic.pdf} says which board
+    signal sits on each connector net.
+  \item \emph{AX7A200B User Manual REV1.0.pdf} gives a table per
+    peripheral, with the signal, the ball and a sentence on what the
+    signal does.
+\end{itemize}
+
+The documents are the vendor's and are not in this repository. What is
+here is the table extracted from them, and the tool that extracts it.
+
+\subsection{The trap in the carrier's tables}
+
+The carrier's connector tables cannot be read as text. Each row draws
+the net label above and the signal label about three points below it, so
+a text extractor that works line by line puts every signal beside the
+net of the row \emph{below} it, and every answer is one row out. Read
+that way, LED1 takes LED2's ball, \texttt{ETH\_TXCK} moves from P15 to
+R16, and the PCIe reset moves from L16 to K16.
+
+The tool therefore reads the carrier as word boxes, with coordinates,
+and pairs each signal with the nearest net \emph{above} it. Three facts
+check that rule, each from somewhere else:
+
+\begin{enumerate}
+  \item the manual's own table says \texttt{ETH\_TXCK} is P15, and the
+    rule puts it there;
+  \item the rule gives LED1 to L13, LED2 to M13, LED3 to K14 and LED4 to
+    K13, which is what the designs in \texttt{HDL/txhdl} drive, and what
+    was confirmed by looking at the board;
+  \item the rule puts \texttt{UART1\_TXD} on L15, which is the ball
+    those designs drive as their serial output on a board whose output
+    the host reads.
+\end{enumerate}
+
+The tests in this repository assert all three, so a change to the tool
+that breaks the rule fails the build.
+
+\section{What to know before using a pin}
+
+\begin{itemize}
+  \item \textbf{The serial port's names are written from the FPGA's
+    side.} \texttt{UART1\_TXD}, L15, is the FPGA's output and the
+    bridge's input.
+  \item \textbf{The PCIe reset is L16}, \texttt{IO\_L23P\_T3\_FOE\_B\_15}
+    in bank 15, from the slot's pin A11 through a 4.7\,k$\Omega$ pull-up
+    to \texttt{+3.3V\_PCIe}. It is a dual-purpose configuration pin,
+    \texttt{FOE\_B}, which is free after configuration on a board that
+    boots from QSPI.
+  \item \textbf{The configuration flash is an N25Q128}, 128\,Mbit, which
+    is 16\,MiB. Vivado's flash programming refuses a target that names
+    the 256\,Mbit part, saying \texttt{Part identified : mt25ql128 Part
+    selected : mt25ql256}.
+  \item \textbf{Bank 15 is the 3.3\,V bank} that carries the LEDs, the
+    buttons, the serial port and the PCIe reset, so those are
+    \texttt{LVCMOS33} without translation.
+  \item \textbf{A transceiver ball has two names.} The core board calls
+    it \texttt{MGT\_TX0\_P} and the carrier calls it
+    \texttt{SFP1\_TX\_P} or \texttt{PCIE\_TX0\_P}. The tables here use
+    the functional name and list the other as an alias.
+\end{itemize}
+
+\section{The pins}
+
+\input{tables.tex}
+
+\section{Using the data}
+
+\texttt{data/pins.json} is one object per ball:
+
+\begin{verbatim}
+{
+  "pin": "L16",
+  "bank": 15,
+  "function": "IO_L23P_T3_FOE_B_15",
+  "net": "B15_L23_P",
+  "signal": "PCIE_PERST",
+  "purpose": "the PCIe slot, x4 in size and x2 in lanes",
+  "peripheral": "pcie",
+  "board": "carrier",
+  "sources": ["AC7A200 Core Board Schematic.pdf",
+              "AX7A200B Carrier Board Schematic.pdf"]
+}
+\end{verbatim}
+
+So a question about the board is a query. Which ball is the PCIe reset:
+
+\begin{verbatim}
+jq -r '.pins[] | select(.signal == "PCIE_PERST") | .pin' data/pins.json
+\end{verbatim}
+
+What is on bank 16, or which balls the HDMI encoder uses, or what a ball
+is for, are the same shape of question.
+
+\end{document}
